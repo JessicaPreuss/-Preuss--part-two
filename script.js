@@ -30,7 +30,7 @@ var happiness = 0;
                 }
             } 
             if (i == 5) {
-              return console.log(petName, "has", happiness, "happiness and ", energy "energy.");
+              return console.log(petName, "has", happiness, "happiness and", energy "energy.");
             }
             document.getElementById("demo").innerHTML = text;
           }) ();
