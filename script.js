@@ -18,9 +18,9 @@ var happiness = 0;
             if (!userInput) {
               text = "User cancelled the prompt.";
             } else if (userInput == actions[0]) {
-              happiness++;
-            } else if (userInput == actions[1]) {
               energy = energy + 2;
+            } else if (userInput == actions[1]) {
+              happiness++;
             } else if (userInput == actions[2]) {
                 if (energy == 0) {
                     alert("Not enough energy to enjoy a walk.");
@@ -30,7 +30,7 @@ var happiness = 0;
                 }
             } 
             if (i == 5) {
-              return console.log(petName, energy, happiness);
+              return console.log(petName, "has", happiness, "happiness and ", energy "energy.");
             }
             document.getElementById("demo").innerHTML = text;
           }) ();
