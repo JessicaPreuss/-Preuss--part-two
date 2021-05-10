@@ -26,11 +26,11 @@ var happiness = 0;
                     alert("Not enough energy to enjoy a walk.");
                 } else {
                     happiness = happiness +2;
-                    energy = energy--;
+                    energy--;
                 }
             } 
             if (i == 5) {
-              return console.log(petName, "has", happiness, "happiness and", energy "energy.");
+              return console.log(petName, "has", happiness, "happiness and", energy, "energy.");
             }
             document.getElementById("demo").innerHTML = text;
           }) ();
